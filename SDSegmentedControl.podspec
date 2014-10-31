@@ -3,9 +3,9 @@
 # valid spec.
 Pod::Spec.new do |s|
   s.name         = "SDSegmentedControl"
-  s.version      = "1.0.2"
+  s.version      = "1.0.2-exaring"
   s.homepage     = "https://github.com/rs/SDSegmentedControl"
-  s.summary      = "A drop-in remplacement for UISegmentedControl that mimic iOS 6 AppStore tab controls."
+  s.summary      = "A drop-in remplacement for UISegmentedControl that mimic iOS 6 AppStore tab controls. Forked from https://github.com/rs/SDSegmentedControl"
   s.description  = <<-DESC
                     ## Features
 
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.author       = { "Olivier Poitrey" => "rs@dailymotion.com", "Marius Rackwitz" => "git@mariusrackwitz.de" }
 
   s.requires_arc = true
-  s.source       = { :git => "https://github.com/rs/SDSegmentedControl.git", :tag => "1.0.2" }
+  s.source       = { :git => "https://github.com/exaring/SDSegmentedControl.git", :tag => "1.0.2-exaring" }
 
   s.platform     = :ios, '5.0'
   s.source_files = '*.{h,m}'

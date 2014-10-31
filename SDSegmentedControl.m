@@ -119,7 +119,7 @@ const CGFloat kSDSegmentedControlScrollOffset = 20;
     }
     else
     {
-        self.backgroundColor = [UIColor clearColor];
+        //self.backgroundColor = [UIColor clearColor];
     }
 
     // Init border bottom layer
@@ -131,8 +131,8 @@ const CGFloat kSDSegmentedControlScrollOffset = 20;
     }
     else
     {
-        self.borderColor = UIColor.blackColor;
-        self.borderWidth = .25;
+        //self.borderColor = UIColor.blackColor;
+        //self.borderWidth = .25;
     }
     _borderBottomLayer.fillColor = nil;
 
@@ -423,7 +423,7 @@ const CGFloat kSDSegmentedControlScrollOffset = 20;
 - (NSInteger)firstEnabledSegmentIndexNearIndex:(NSUInteger)index
 {
     // Select the first enabled segment
-    for (int i = index; i < self._items.count; i++)
+    for (NSInteger i = index; i < self._items.count; i++)
     {
         if (((SDSegmentView *)self._items[i]).enabled)
         {
@@ -431,7 +431,7 @@ const CGFloat kSDSegmentedControlScrollOffset = 20;
         }
     }
 
-    for (int i = index; i >= 0; i--)
+    for (NSInteger i = index; i >= 0; i--)
     {
         if (((SDSegmentView *)self._items[i]).enabled)
         {
@@ -1051,8 +1051,8 @@ const CGFloat kSDSegmentedControlScrollOffset = 20;
         }
         else
         {
-            self.titleFont = [UIFont systemFontOfSize:14];
-            self.selectedTitleFont = [UIFont boldSystemFontOfSize:14];
+            //self.titleFont = [UIFont systemFontOfSize:14];
+            //self.selectedTitleFont = [UIFont boldSystemFontOfSize:14];
         }
 
         self.userInteractionEnabled = YES;
